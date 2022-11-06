@@ -6,7 +6,7 @@ class ApiRepository {
   Future<Map> getData() async {
     String request = ChavesApi.chaveHgbrasilApi();
 
-    http.Response response = await http.get(request);
+    http.Response response = await http.get(Uri.parse(request));
     return json.decode(response.body);
   }
 }
