@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:currency_converter/chaves_api.dart';
 import 'package:http/http.dart' as http;
 
-class ApiRepository {
+class ApiRepositoryHttp {
   Future<Map> getData() async {
     String request = ChavesApi.chaveHgbrasilApi();
 
